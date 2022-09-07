@@ -57,7 +57,8 @@ eventsRouter.put('/:id', async (req, res) => {
     }
 
     const event = await eventsCollection.updateOne({ _id: new ObjectId(ID) }, { $set: req.body })
-    if (event.upsertedCount !== 1) {
+
+    if (event.modifiedCount !== 1) {
         return res.status(httpStatus.BAD_REQUEST).json({ error: `Invalid event ID`, details: `No event found with ID: ${ID}` })
     }
     res.json({ success: true })

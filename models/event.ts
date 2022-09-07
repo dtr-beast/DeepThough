@@ -9,10 +9,11 @@ export const EventSchema = z.object({
     // Image is Base64 encoded
     image: z.string().optional(),
     description: z.string(),
-    moderator: z.string(),
+    moderator: z.number(),
     category: z.string(),
+    sub_category: z.string(),
     regor_rank: z.number(),
     attendees: z.array(z.number()),
-})
+}).strict()
 
 export type Event = z.infer<typeof EventSchema>
