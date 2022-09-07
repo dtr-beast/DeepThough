@@ -1,4 +1,6 @@
-## DeepThought Task 1 - Event API
+[Task - 2](./Task2.md)
+
+# DeepThought Task 1 - Event API
 
 ### Briefing
 
@@ -74,7 +76,3 @@ curl --request PUT \
 curl --request DELETE \
   --url http://localhost:3000/api/v3/app/events/{event_id}
 ```
-
-# Task - 2
-
-- [Link](./Task2.md)
