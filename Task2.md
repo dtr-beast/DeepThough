@@ -1,6 +1,6 @@
 - [Task - 1](README.md)
 
-#### Task - 2 API Documentation
+# Task - 2 API Documentation
 
 ## Nudge Creation
 
